@@ -1,7 +1,7 @@
 # Smarter TV
-Because sometimes I miss cable subscription!  
+A web portal for online TV because, sometimes I miss cable subscription.  
   
-Connect your TV to your computer with HDMI as an external monitor and run this portal webpage for a "smarter tv".  
+Connect your TV to your computer with HDMI as an external monitor and run this portal webpage for a Smart TV mixed with TV Guide sort of interface.  
   
 This web app connects you to video, music and game websites. Primarily shows Canadian content and some relative to Calgary, Alberta. Other content is global, USA-specific or UK-specific.  
 
