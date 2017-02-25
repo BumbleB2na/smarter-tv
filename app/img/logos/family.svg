@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 121.8 121.5" xml:space="preserve" version="1.1" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 121.8 121.5">
+<switch>
+	<foreignObject y="0" x="0" height="1" width="1" requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/">
+	</foreignObject>
+	<g>
+		<g id="Layer_2" display="none">
+			<rect height="254" width="214" y="-51" x="-42.6" display="inline" fill="#084254"/>
+		</g>
+		<g id="Layer_1">
+			<path d="m0.3 60.7c0-33.5 27.2-60.7 60.8-60.7 33.5 0 60.7 27.2 60.7 60.7s-27.2 60.7-60.7 60.7c-33.6 0-60.8-27.1-60.8-60.7z" fill="#4BB7E3"/>
+			<path d="m86.4 15.9c-7.1-2.6-13.8-3-20.5-3-15.1 0-24.6 5.7-24.6 23.4v11.2h-9.5v16.7h9.5v45.6h28.5v-45.5h16.3v-16.7h-16.3v-10.6c0-4.2 3.7-7.1 8.5-7.1 2.8 0 5.5 0.5 8.2 1.5v-15.5z" fill="#fff"/>
+		</g>
+	</g>
+</switch>
+</svg>

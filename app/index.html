@@ -1,0 +1,398 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>TV Online</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+		<div id="template" style="display:none;">
+			<img class="pencil" src="img/icon-pencil-32.png" />
+			<img class="link" src="img/icon-link.png" />
+			<img class="trash" src="img/icon-trash.png" />
+			<span class="list-item list-item--href first">http://</span>
+			<div id="template--li-watch-later">
+				<li><img class="pencil" src="img/icon-pencil-32.png" /><img class="trash" src="img/icon-trash.png" /><span class="list-item">watch later...</span></li>
+			</div>
+		</div>
+		
+		<div id="overlay"></div>
+		
+		<!-- isotope.js grid filters: -->
+		<div id="filters" class="button-group">
+			<button class="button is-checked" data-filter="*">show all</button>
+			<button class="button" data-filter=".kids">kids</button>
+			<button class="button" data-filter=".adults">adults</button>
+			<button class="button" data-filter=".tv">tv</button>
+			<button class="button" data-filter=".web">web</button>
+			<button class="button" data-filter=".news">news</button>
+			<button class="button" data-filter=".tech">tech</button>
+			<button class="button" data-filter=".music">music</button>
+			<button class="button" data-filter=".movies">movies</button>
+			<button class="button" data-filter=".sports">sports</button>
+			<button class="button" data-filter=".games">games</button>
+			<!-- isotope filter examples:
+				<button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
+				<button class="button" data-filter=":not(.transition)">not transition</button>
+				<button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+				<button class="button" data-filter="numberGreaterThan50">number &gt; 50</button>
+				<button class="button" data-filter="ium">name ends with –ium</button>
+			-->
+		</div>
+		
+		<!-- isotope.js grid: -->
+        <div class="grid clearfix">
+			<div class="grid-sizer"></div>
+
+			<div class="grid-item tv adults">
+				<a class="grid-item--a first" href="http://www.tvguide.com/listings/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/tv-guide.png" />
+				</a>
+				<ul class="list">
+					<li><a href="http://www.tvtv.ca/ab/calgary/lu310" target="_blank"><span class="list-item">calgary tv listings</span></a></li>
+				</ul>
+			</div>
+
+			<div class="grid-item grid-item--width2 adults">
+				<ul id="watchLater" class="list">
+				</ul>
+			</div>
+			
+			<div class="grid-item news tv sports adults">
+				<a class="grid-item--a first" href="http://www.bbc.com/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/bbc-sm.png" />
+				</a>
+				<ul class="list">
+					<li><a href="http://www.bbc.com/news/video_and_audio/international" target="_blank"><span class="list-item">world news</span></a></li>
+					<li><a href="http://www.bbc.com/earth/columns/video" target="_blank"><span class="list-item last">earth</span></a></li>
+				</ul>
+			</div>
+			
+			<div class="grid-item tv adults">
+				<a class="usa" href="chrome://extensions/" target="_blank"><img src="img/british-flag-icon.jpg" /></a>
+				<a class="grid-item--a first last" href="http://www.bbc.co.uk/bbcone" target="_blank">
+					<img class="grid-item--logo" src="img/logos/bbc-sm.png" />
+				</a>
+			</div>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.shawconnect.ca/video/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/shaw-connect.png" />
+			</a>
+			
+			<div class="grid-item news tv sports adults">
+				<a class="grid-item--a first" href="http://www.cbc.ca/player/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/cbc.svg" />
+				</a>
+				<ul class="list">
+					<li><a href="http://www.cbc.ca/player/tv" target="_blank"><span class="list-item">tv</span></a></li>
+					<li><a href="http://www.cbc.ca/player/sports" target="_blank"><span class="list-item">sports</span></a></li>
+					<li><a href="http://www.cbc.ca/player/news" target="_blank"><span class="list-item last">news</span></a></li>
+				</ul>
+			</div>
+			
+			<a class="grid-item grid-item--a kids tv" href="http://www.cbc.ca/player/kids" target="_blank">
+				<img class="grid-item--logo" src="img/logos/cbc-kids.png" />
+			</a>
+			
+			<div class="grid-item grid-item--width2 tv adults">
+				<a class="grid-item--a first" href="http://www.ctv.ca/video" target="_blank">
+					<img class="grid-item--logo" src="img/logos/ctv.svg" />
+				</a>
+			</div>
+			
+			<a class="grid-item grid-item--a news tv adults" href="http://www.cnn.com/videos" target="_blank">
+				<img class="grid-item--logo" src="img/logos/cnn.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a kids tv" href="http://www.teletoon.com/en/videos" target="_blank">
+				<img class="grid-item--logo" src="img/logos/teletoon.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a kids tv" href="http://www.cartoonnetwork.ca/video/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/cartoon-network-sm.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.thecomedynetwork.ca/video" target="_blank">
+				<img class="grid-item--logo" src="img/logos/comedy-network.svg" />
+			</a>
+			
+			<div class="grid-item tv adults">
+				<a class="usa" href="chrome://extensions/" target="_blank"><img src="img/usa-flag-icon.gif" /></a>
+				<a class="grid-item--a first" href="http://www.cc.com/full-episodes" target="_blank">
+					<img class="grid-item--logo" src="img/logos/comedy-central.svg" />
+				</a>
+				<ul class="list">
+					<li><a href="http://www.cc.com/stand-up" target="_blank"><span class="list-item">standup</span></a></li>
+					<li><a href="http://www.cc.com/not-for-tv" target="_blank"><span class="list-item last">not for tv</span></a></li>
+				</ul>
+			</div>
+			
+			<a class="grid-item grid-item--a web adults music" href="http://8tracks.com/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/8tracks.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a web adults music" href="http://deezer.com" target="_blank">
+				<img class="grid-item--logo" src="img/logos/deezer-sm.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a web adults music" href="https://play.google.com/music/listen" target="_blank">
+				<img class="grid-item--logo" src="img/logos/google-play-music.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.foodnetwork.ca/video/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/food-network.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.citytv.com/calgary/video/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/city-tv.svg" />
+			</a>
+			
+			<div class="grid-item grid-item--width2 web kids adults music">
+				<a class="grid-item--a first" href="https://www.youtube.com" target="_blank">
+					<img class="grid-item--logo" src="img/logos/youtube.png" />
+				</a>
+				<ul class="list">
+					<li><a href="https://www.youtube.com/user/SesameStreet" target="_blank"><span class="list-item">sesame street</span></a></li>
+					<li><a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" target="_blank"><span class="list-item last">music channel</span></a></li>
+				</ul>
+			</div>
+			
+			<a class="grid-item grid-item--a web adults" href="http://vimeo.com/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/vimeo.svg" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv tech adults" href="http://epn.tv/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/electric-playground.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a web tech adults" href="http://video.wired.com/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/wired-sm.png" />
+			</a>
+			
+			<div class="grid-item web tech adults">
+				<a class="grid-item--a first" href="https://channel9.msdn.com/Browse/Shows" target="_blank">
+					<img class="grid-item--logo" src="img/logos/channel-9.png" />
+				</a>
+				<ul class="list">
+					<li><a href="https://channel9.msdn.com/Browse/Series" target="_blank"><span class="list-item last">series</span></a></li>
+				</ul>
+			</div>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.space.ca/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/space.svg" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.m3tv.ca/shows/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/m3.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a web sports adults" href="http://www.redbull.tv/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/redbull-tv-sm.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a web sports adults" href="https://gopro.com/channel/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/gopro-sm.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.mtv.ca/shows/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/mtv.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a web tech adults games" href="http://www.twitch.tv/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/twitch-sm.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv sports adults" href="http://www.tsn.ca/video" target="_blank">
+				<img class="grid-item--logo" src="img/logos/tsn.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv sports adults" href="http://www.sportsnet.ca/videos/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/sportsnet.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.hgtv.ca/video/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/hgtv.png" />
+			</a>
+			
+			<div class="grid-item grid-item--width2 web adults">
+				<a class="grid-item--a first" href="http://video.nationalgeographic.com/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/nat-geo.png" />
+				</a>
+				<ul class="list">
+					<li><a href="http://channel.nationalgeographic.com/video/" target="_blank"><span class="list-item">nat geo channel</span></a></li>
+					<li><a href="http://channel.nationalgeographic.com/wild/video/" target="_blank"><span class="list-item last">nat geo wild</span></a></li>
+				</ul>
+			</div>
+			
+			<a class="grid-item grid-item--a web kids" href="http://kids.nationalgeographic.com/videos/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/nat-geo-kids.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.showcase.ca/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/showcase-sm.png" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv kids" href="http://www.treehousetv.com/videos/fullepisodes" target="_blank">
+				<img class="grid-item--logo" src="img/logos/treehouse.png" />
+			</a>
+			
+			<div class="grid-item web adults">
+				<a class="grid-item--a first" href="http://www.earthcam.com/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/earthcam.png" />
+				</a>
+				<ul class="list">
+					<li><a href="http://www.earthcamtv.com/index.php" target="_blank"><span class="list-item last">earthcam tv</span></a></li>
+				</ul>
+			</div>
+			
+			<a class="grid-item grid-item--a tv kids" href="http://www.ytv.com/videos" target="_blank">
+				<img class="grid-item--logo" src="img/logos/ytv.svg" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv kids" href="http://www.family.ca/videos/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/family.svg" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv kids" href="http://www.tvokids.com/watch" target="_blank">
+				<img class="grid-item--logo" src="img/logos/tvo-kids.jpg" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.omnitv.ca/ab/en/videos/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/omni.svg" />
+			</a>
+			
+			<div class="grid-item tv adults">
+				<a class="usa" href="chrome://extensions/" target="_blank"><img src="img/usa-flag-icon.gif" /></a>
+				<a class="grid-item--a first last" href="http://www.pbs.org/video/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/pbs.png" />
+				</a>
+			</div>
+			
+			<div class="grid-item tv kids">
+				<a class="usa" href="chrome://extensions/" target="_blank"><img src="img/usa-flag-icon.gif" /></a>
+				<a class="grid-item--a first last" href="http://pbskids.org/video/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/pbs-kids.svg" />
+				</a>
+			</div>
+			
+			<div class="grid-item tv kids">
+				<a class="usa" href="chrome://extensions/" target="_blank"><img src="img/usa-flag-icon.gif" /></a>
+				<a class="grid-item--a first last" href="http://www.nick.com/videos/episodes/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/nick.png" />
+				</a>
+			</div>
+			
+			<div class="grid-item tv kids">
+				<a class="usa" href="chrome://extensions/" target="_blank"><img src="img/usa-flag-icon.gif" /></a>
+				<a class="grid-item--a first last" href="http://www.nickjr.com/videos/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/nick-jr.svg" />
+				</a>
+			</div>
+			
+			<div class="grid-item tv adults">
+				<a class="usa" href="chrome://extensions/" target="_blank"><img src="img/usa-flag-icon.gif" /></a>
+				<a class="grid-item--a first last" href="http://www.cbs.com/watch/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/cbs.svg" />
+				</a>
+			</div>
+			
+			<div class="grid-item grid-item--width2 tv web kids adults movies">
+				<a class="grid-item--a first" href="http://www.netflix.com/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/netflix.jpg" />
+				</a>
+				<a class="grid-item--a last" href="http://www.moreflicks.com/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/moreflicks.png" />
+				</a>
+			</div>
+			
+			<div class="grid-item grid-item--width2 tv web news adults">
+				<a class="grid-item--a first" href="http://www.theweathernetwork.com/videos/gallery" target="_blank">
+					<img class="grid-item--logo" src="img/logos/the-weather-network.png" />
+				</a>
+				<ul class="list">
+					<li><a href="http://www.theweathernetwork.com/ca/weather/alberta/calgary" target="_blank"><span class="list-item last">Calgary weather</span></a></li>
+				</ul>
+			</div>
+			
+			<div class="grid-item grid-item--width2 tv music adults">
+				<a class="grid-item--a first" href="http://www.much.com/shows/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/much-logo.svg" />
+				</a>
+				<ul class="list">
+					<li><a href="http://www.much.com/shows/conan/" target="_blank"><span class="list-item last">watch Conan</span></a></li>
+				</ul>
+			</div>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://aptn.ca/fullepisodes/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/aptn.svg" />
+			</a>
+			
+			<a class="grid-item grid-item--a tv adults" href="http://www.yestv.com/watchlive.php" target="_blank">
+				<img class="grid-item--logo" src="img/logos/yes-tv.png" />
+			</a>
+
+			<a class="grid-item grid-item--a tv music kids" href="http://www.juiceboxtv.ca/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/juicebox.svg" />
+			</a>
+			
+			<div class="grid-item grid-item--width2 web kids adults tech games">
+				<a class="grid-item--a first" href="http://www.shockwave.com/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/shockwave.png" />
+				</a>
+				<ul class="list">
+					<li><a href="http://www.shockwave.com/gamelanding/100-arrows.jsp" target="_blank"><span class="list-item">100 arrows</span></a></li>
+					<li><a href="http://www.shockwave.com/gamelanding/save-planet.jsp" target="_blank"><span class="list-item last">save planet</span></a></li>
+				</ul>
+			</div>
+
+			<a class="grid-item grid-item--a web kids adults tech games" href="http://www.miniclip.com/" target="_blank">
+				<img class="grid-item--logo" src="img/logos/miniclip.png" />
+			</a>
+
+			<div class="grid-item grid-item--width2 web kids adults tech games">
+				<a class="grid-item--a first" href="http://playdosgamesonline.com/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/ms-dos.png" />
+				</a>
+				<ul class="list">
+					<li><a href="http://playdosgamesonline.com/warcraft-II-tides-of-darkness.html" target="_blank"><span class="list-item">Warcraft II: Tides of Darkness</span></a></li>
+					<li><a href="http://playdosgamesonline.com/sam-and-max-hit-the-road.html" target="_blank"><span class="list-item last">Sam &amp; Max: Hit The Road</span></a></li>
+				</ul>
+			</div>
+			
+			<div class="grid-item grid-item--width2 tv news adults">
+				<a class="grid-item--a first" href="http://globalnews.ca/live/calgary/" target="_blank">
+					<img class="grid-item--logo" src="img/logos/global-news-v2.png" />
+				</a>
+				<ul class="list">
+					<li><a href="http://globalnews.ca/calgary/videos/" target="_blank"><span class="list-item">videos</span></a></li>
+					<li><a href="http://globalnews.ca/calgary/programs/" target="_blank"><span class="list-item last">programs</span></a></li>
+				</ul>
+			</div>
+			
+			<div class="grid-item grid-item--width2 tv adults">
+				<ul class="list">
+					<li><span class="list-item header first">need cable subscription for....</span></li>
+					<li><a href="http://www.fxnowcanada.ca/" target="_blank"><span class="list-item">FX Canada</span></a></li>
+					<li><a href="http://www.discovery.ca/Video" target="_blank"><span class="list-item last">Discovery</span></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- background: -->
+		<div id="underlay"></div>
+		
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+		<script src="js/vendor/isotope.pkgd.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
