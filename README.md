@@ -1,8 +1,13 @@
 # Smarter-tv
-Because sometimes I miss cable subscription. Connect your TV to your computer with HDMI as an external monitor and run this portal webpage for a "smarter tv".  
+Because sometimes I miss cable subscription!  
+  
+Connect your TV to your computer with HDMI as an external monitor and run this portal webpage for a "smarter tv".  
   
 This connects you to video, music and game websites. Primarily shows Canadian content and some relative to Calgary, Alberta. Other content is global, USA-specific or UK-specific.  
 
+Download to desktop. Customize index.html to your liking and run it for your own Smarter TV web portal like this:  
+![Alt](/README_app-screenshot.png "Scrrenshot of Smarter-tv web app")  
+  
 # Purpose
 * a portal or "guide of online channels" that hook up your computer to your tv as a replacement for cable.  
 * the purpose of this is to save it to your desktop computer's harddrive and customize it to your liking * e.g: edit the html so that weather network goes to your local weather.  
@@ -18,10 +23,10 @@ This application shows primarily global and Canadian websites where, at the time
 * section for keeping note of links to things you'd like to watch later * this saves to HTML localstorage so the watch later list will: a) be cleared if you clear your browser cache, and b) be contained within your browser or chrome browsing profile  
 
 # Customizing: adding a new card
-1. Find a logo for a website that you'd like to add and add it to the /img folder.
-2. Duplicate the html for a card that is similar to one you want to create.
-3. Customize the logo img and href to point to the website's logo and website URL. Optionally add additional links below the logo.
-4. Pay attention to the classnames in the card will affect the card's visibility depending on which filter buttons are selected
+1. find a logo for a website that you'd like to add and add it to the /img folder.
+2. duplicate the html for a card that is similar to one you want to create.
+3. customize the logo img and href to point to the website's logo and website URL. Optionally add additional links below the logo.
+4. pay attention to the classnames in the card will affect the card's visibility depending on which filter buttons are selected
 
 # Tech notes
 * used a version of Html5Boilerplate.com from early 2016.  
@@ -29,11 +34,14 @@ This application shows primarily global and Canadian websites where, at the time
 * originally intended for this to be run from harddrive so, images have not been optimized for web and isotope grid is initialized assuming all images are loaded instantly. This approach may still work well as a progressive web app (PWA).  
 
 # Ideas for minor version improvements
+* prevent tabnabbing vulnerability from target="_blank"
+* add "about" section accessed from menu icon in top-right to see version number and a link to the github page
 * initialize isotope grid after visible images are done loading so that this can work better as a webpage  
 * ensure this is accessible  
 * add a secondary filter group that separates out global content (e.g: Youtube.com), Canadian content, USA content, UK content, and local content (e.g: Calgary, Alberta, Canada). It can be applied along with the primary (existing) filter group.  
 * an area to enter in your City.. maybe a zip/postal code.. that can be used to give you contextual content such as local weather. It may also default you to the secondary filter group that shows content available in your location.  
 * have it read from a JSON file and populate cards using HTML templates. Allow customzations to the JSON file  
+* make watch later section work better and maybe add customizable "watch later" sections to any card
 * reminders of things you'd like to watch  
 * pull list of video updates from select websites such as netflix  
 * add dynamic data to cards from data pulled  
