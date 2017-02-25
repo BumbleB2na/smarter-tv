@@ -6,7 +6,7 @@ Connect your TV to your computer with HDMI as an external monitor and run this p
 This web app connects you to video, music and game websites. Primarily shows Canadian content and some relative to Calgary, Alberta. Other content is global, USA-specific or UK-specific.  
 
 # Setup
-1. [link](https://github.com/BumbleB2na/smarter-tv/archive/master.zip "download this project") to computer
+1. [download this project](https://github.com/BumbleB2na/smarter-tv/archive/master.zip "download this project") to your computer
 2. connect computer with HDMI to your TV to use it as an external monitor
 3. run index.html for your own Smarter TV web portal like this: ![Alt](/README_app-screenshot.png "Scrrenshot of Smarter TV web app")  
 [1:]
