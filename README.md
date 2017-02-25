@@ -2,7 +2,7 @@
 Because sometimes I miss cable subscription. Connect your TV to your computer with HDMI as an external monitor and run this portal webpage for a "smarter tv".  
   
 This connects you to video, music and game websites. Primarily shows Canadian content and some relative to Calgary, Alberta. Other content is global, USA-specific or UK-specific.
-
+  
 # description
 This shows primarily global and Canadian websites where, at the time of development, could be used to watch tv without a cable subscription (unless noted otherwise). Included are sites for music, games, video.  
   
