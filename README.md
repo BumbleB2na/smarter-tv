@@ -2,19 +2,17 @@
 Because sometimes I miss cable subscription. Connect your TV to your computer with HDMI as an external monitor and run this portal webpage for a "smarter tv".  
   
 This connects you to video, music and game websites. Primarily shows Canadian content and some relative to Calgary, Alberta. Other content is global, USA-specific or UK-specific.  
-  
-# description
+
+# purpose
+* a portal or "guide of online channels" that hook up your computer to your tv as a replacement for cable.  
+* the purpose of this is to save it to your desktop computer's harddrive and customize it to your liking * e.g: edit the html so that weather network goes to your local weather.  
+
+# notes
 This shows primarily global and Canadian websites where, at the time of development, could be used to watch tv without a cable subscription (unless noted otherwise). Included are sites for music, games, video.  
   
 US flag icons have been added to cards where the target website can only work from an American IP address. Same story for UK flag icons.  
   
 Most of these sites work on desktop but do not play video on mobile.  
-  
-The original idea behind this was to hook up a desktop/laptop computer to a TV via HDMI and use it for watching online video, making it feel like a "smart tv".  
-
-# purpose
-* a portal or "guide of online channels" that hook up your computer to your tv as a replacement for cable.  
-* the purpose of this is to save it to your desktop computer's harddrive and customize it to your liking * e.g: edit the html so that weather network goes to your local weather.  
 
 # features
 * target websites open in a new tab  
